@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d76d9ca06.js" crossorigin="anonymous"></script>
+    <title>Innogeeks</title>
+    <link rel="stylesheet" href="public/css/main.css">
+    <script defer src="valid.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="logo" src="res/innologobright1.png" alt="Innogeeks Logo">
+        </header>
+        <div class="hero-container">
+          <img class="event-img" src="/res/linux.png" alt="Linux Event">
+          <div class="event-banner">
+            <p class="event-title">Hands On Linux ❤</p>
+            <p class="event">Crash Days' 22</p>
+            <div class="details">
+              <div class="location">
+                <div class="loc-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <p>E-306 Lab (E-Block)</p>
+              </div>
+              <div class="time">
+                <div class="time-icon"><i class="fa-regular fa-clock"></i></div>
+                <p>5:30 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="event-dates">
+            <p class="event-date">11</p>
+            <p class="event-month">November</p>
+          </div>
+          <div class="right-blue"></div>
+          
+        </div>
+        <div class="container">
+            <form action="/submit" method="POST" id="form">
+              <div class="row">
+                <h4>Registration Form</h4>
+                <div class="input-group name">
+                  <input type="text" id="name" name="name" placeholder="Full Name"/>
+                  <div class="error"></div>
+                </div>
+                <div class="input-group">
+                  <input type="email" id="email" name="email" placeholder="Email Address"/>
+                  <div class="error"></div>
+                </div>
+                <div class="input-group">
+                  <input type="number" id="number" name="number" placeholder="Whatsapp Number" maxlength="10"/>
+                  <div class="error"></div>
+                </div>
+                <div class="col-half">
+                  <div class="input-group">
+                    <select name="branch" id="branch" class="branch">
+                      <option>Branch</option>
+                      <option>CSE</option>
+                      <option>CS</option>
+                      <option>CSIT</option>
+                      <option>IT</option>
+                      <option>ECE</option>
+                      <option>EN</option>
+                      <option>ME</option>
+                      <option>CE</option>
+                    </select>
+                    <select name="year" id="year" class="year">
+                      <option>Year</option>
+                      <option>3rd</option>
+                      <option>2nd</option>
+                      <option>1st</option>
+                    </select>
+                    <div class="error"></div>
+                  </div>
+                </div>
+                <div class="col-half">
+                  <div class="input-group">
+                    <input id="residence-hostler"  type="radio" name="residence" value="Hostler"/>
+                    <label for="residence-hostler">Hostler</label>
+                    <input id="residence-dayscholar" type="radio" name="residence" value="Day Scholar"/>
+                    <label for="residence-dayscholar">Day Scholar</label>
+                    <div class="error"></div>
+                  </div>
+                </div>
+              
+                
+                <h4>Domain (if Innogeeks Member)</h4>
+                <div class="input-group">
+                  <select name="domain" id="domain" class="domain">
+                    <option>Select Domain</option>
+                    <option>AR/VR</option>
+                    <option>Android Development</option>
+                    <option>Web Development</option>
+                    <option>Machine Learning</option>
+                    <option>IoT</option>
+                  </select>
+                  <div class="error"></div>
+                </div>
+              </div>
+              <!-- <div class="row">
+                <div class="col-half">
+                  <h4>Date of Birth</h4>
+                  <div class="input-group">
+                    <div class="col-third">
+                      <input type="text" placeholder="DD"/>
+                    </div>
+                    <div class="col-third">
+                      <input type="text" placeholder="MM"/>
+                    </div>
+                    <div class="col-third">
+                      <input type="text" placeholder="YYYY"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-half">
+                  <h4>Gender</h4>
+                  <div class="input-group">
+                    <input id="gender-male" type="radio" name="gender" value="male"/>
+                    <label for="gender-male">Male</label>
+                    <input id="gender-female" type="radio" name="gender" value="female"/>
+                    <label for="gender-female">Female</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <h4>Payment Details</h4>
+                <div class="input-group">
+                  <input id="payment-method-card" type="radio" name="payment-method" value="card" checked="true"/>
+                  <label for="payment-method-card"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
+                  <input id="payment-method-paypal" type="radio" name="payment-method" value="paypal"/>
+                  <label for="payment-method-paypal"> <span><i class="fa fa-cc-paypal"></i>Paypal</span></label>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="text" placeholder="Card Number"/>
+                  <div class="input-icon"><i class="fa fa-credit-card"></i></div>
+                </div>
+                <div class="col-half">
+                  <div class="input-group input-group-icon">
+                    <input type="text" placeholder="Card CVC"/>
+                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                  </div>
+                </div>
+                <div class="col-half">
+                  <div class="input-group">
+                    <select>
+                      <option>01 Jan</option>
+                      <option>02 Jan</option>
+                    </select>
+                    <select>
+                      <option>2015</option>
+                      <option>2016</option>
+                    </select>
+                  </div>
+                </div>
+              </div> -->
+              <div class="row">
+                <h4>Confirmation</h4>
+                <div class="input-group">
+                  <input id="terms" type="checkbox"/>
+                  <label for="terms">I confirm that I am available for the above mentioned date and time and that all my provided details are correct.</label>
+                  <div class="error"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-group">
+                  <button class="submit">Submit</button>
+                </div>
+              </div>
+              
+            </form>
+          </div>
+    </div>
+</body>
+</html>

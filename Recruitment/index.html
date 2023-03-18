@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d76d9ca06.js" crossorigin="anonymous"></script>
+    <title>Innogeeks Domain Choice</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="valid.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="logo" src="res/innologobright1.png" alt="Innogeeks Logo">
+        </header>
+        <div class="hero-container">
+          <div class="event-banner">
+            <p class="event-title">Domain Choice Form (2022-2026)</p>
+          </div>
+          <div class="right-blue"></div>
+          
+        </div>
+        <div class="hero-container">
+          <div class="event-banner">
+            <p class="event-title">This form is closed.</p>
+          </div>
+        </div>
+        <div class="container">
+            <form action="/entry" method="POST" id="form">
+              <div class="row">
+                <div class="input-group name">
+                  <input type="text" id="uid" name="uid" placeholder="UID (without I)"/>
+                  <div class="error"></div>
+                </div>
+                <div class="input-group name">
+                  <input type="text" id="name" name="name" placeholder="Full Name"/>
+                  <div class="error"></div>
+                </div>
+                <div class="input-group name">
+                  <input type="text" id="libid" name="libid" placeholder="Library ID"/>
+                  <div class="error"></div>
+                </div>
+                <div class="input-group name">
+                  <input type="text" id="email" name="email" placeholder="Email"/>
+                  <div class="error"></div>
+                </div>
+                <div class="input-group name">
+                  <input type="text" id="phone" name="phone" placeholder="Phone No."/>
+                  <div class="error"></div>
+                </div>
+                <div class="input-group">
+                  <select name="domain1" id="domain1" class="domain">
+                    <option>Domain Preference 1</option>
+                    <option>AR/VR</option>
+                    <option>Android Development</option>
+                    <option>Web Development</option>
+                    <option>Machine Learning</option>
+                    <option>IoT</option>
+                  </select>
+                  <div class="error"></div>
+                </div>
+                <div class="input-group">
+                  <select name="domain2" id="domain2" class="domain">
+                    <option>Domain Preference 2</option>
+                    <option>AR/VR</option>
+                    <option>Android Development</option>
+                    <option>Web Development</option>
+                    <option>Machine Learning</option>
+                    <option>IoT</option>
+                  </select>
+                  <div class="error"></div>
+                </div>
+                <div class="input-group">
+                  <select name="domain3" id="domain3" class="domain">
+                    <option>Domain Preference 3</option>
+                    <option>AR/VR</option>
+                    <option>Android Development</option>
+                    <option>Web Development</option>
+                    <option>Machine Learning</option>
+                    <option>IoT</option>
+                  </select>
+                  <div class="error"></div>
+                </div>
+              </div>
+              
+              
+              <div class="row">
+                <div class="input-group">
+                  <button class="submit">Submit</button>
+                </div>
+              </div>
+              
+            </form>
+          </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+header {
+  background-color: #034370;
+  padding: 4px;
+  padding-top: 6px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+header img {
+  width: 25vw;
+}
+
+.event-img {
+  background: url("../res/linux.png");
+}
+
+/* 64ac15 */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 15px;
+  color: #b9b9b9;
+  background-color: #e3e3e3;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  height: auto;
+  max-width: 38em;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+.hero-container div.details {
+  display: flex;
+  align-items: center;
+}
+.hero-container div.location {
+  display: flex;
+  align-items: center;
+}
+.hero-container div.location .loc-icon i {
+  color: #b2c2ce;
+  font-size: 12px;
+}
+.hero-container div.location p {
+  color: rgb(66, 66, 66);
+  margin-left: 0.5em;
+  margin-top: 0.3em;
+  font-weight: 100;
+  font-size: 9px;
+}
+.hero-container div.time {
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+}
+.hero-container div.time .time-icon i {
+  color: #a0aeb8;
+  font-size: 12px;
+}
+.hero-container div.time p {
+  color: rgb(66, 66, 66);
+  margin-left: 0.5em;
+  margin-top: 0.3em;
+  font-weight: 100;
+  font-size: 9px;
+}
+.hero-container p {
+  color: black;
+}
+.hero-container img {
+  width: 25%;
+  height: 7.5rem;
+  border-radius: 4.2px 0 0 4.2px;
+}
+.hero-container div.event-banner {
+  margin-left: 1em;
+}
+.hero-container div.event-banner p.event {
+  font-size: 12px;
+}
+.hero-container div.divider {
+  background: black;
+  width: 1px;
+  height: 4rem;
+}
+.hero-container div.event-dates {
+  text-align: center;
+}
+.hero-container div.event-dates p.event-date {
+  margin-top: -0.3em;
+  font-weight: 500;
+}
+.hero-container div.event-dates p.event-month {
+  margin-top: -1.4em;
+  font-size: 0.7em;
+}
+.hero-container div.right-blue {
+  background: #034370;
+  width: 2.5px;
+  height: 7.5rem;
+  margin-right: 0;
+  margin-left: auto;
+  border-radius: 0 4.2px 4.2px 0;
+}
+
+form{
+  margin-right: 0;
+  margin-left: auto;
+  width: 100%;
+  max-width: 8em;
+}
+
+button {
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  background: #0366ac;
+  transition-duration: 0.4s;
+  padding: 1em;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+p{
+  margin-left: 0;
+  margin-right: auto;
+}
+button:hover {
+  background: #034370;
+}
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 38em;
+  padding: 1em 1.5em 1em 1.5em;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+.message {
+  text-align: center;
+  max-width: 38em;
+  padding: 1em 1.5em 1em 1.5em;
+  background-color: transparent;
+  border-radius: 4.2px;
+  /* box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2); */
+}
+
+.container img.tick{
+  width: 4em;
+}
+.container img.invalid{
+  width: 4em;
+}
+
+.container img.ty{
+  width: 6em;
+}
+.container p{
+  margin-left: 1em;
+  color: rgb(70, 70, 70);
+}
+
+@media only screen and (min-width: 700px) {
+  .event-dates {
+    margin-right: -3em;
+    margin-left: auto;
+  }
+  .event-date {
+    font-size: 49px;
+  }
+  .event-title {
+    font-size: 20px;
+  }
+  .divider {
+    margin-right: -3rem;
+    margin-left: auto;
+  }
+  .hero-container {
+    margin: 1em auto;
+  }
+  .container {
+    margin: 1em auto;
+  }
+  .message{
+    margin: 1em auto;
+  }
+}
+@media only screen and (min-width: 430px) {
+  .event-title {
+    font-size: 20px;
+  }
+  .logo {
+    max-width: 10%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .event-dates {
+    margin-right: -0.6em;
+    margin-left: auto;
+  }
+  .event-date {
+    font-size: 9vw;
+  }
+  .divider {
+    margin-right: -0.6rem;
+    margin-left: auto;
+  }
+  .hero-container {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .container {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .message {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .event-title {
+    font-size: 4.5vw;
+  }
+}/*# sourceMappingURL=main.css.map */

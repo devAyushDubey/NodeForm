@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d76d9ca06.js" crossorigin="anonymous"></script>
+    <title>Innogeeks</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="valid.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="logo" src="res/innologobright1.png" alt="Innogeeks Logo">
+        </header>
+        <div class="container">
+            <form action="/check" method="POST" id="form">
+              <div class="row">
+                <div class="input-group name">
+                  <input type="text" id="name" name="name" placeholder="Full Name"/>
+                  <div class="error"></div>
+                </div>
+                <div class="input-group">
+                  <input type="email" id="email" name="email" placeholder="Email Address"/>
+                  <div class="error"></div>
+                </div>
+            </div>
+              <div class="row">
+                <h4>Confirmation</h4>
+                <div class="input-group">
+                  <input id="terms" type="checkbox"/>
+                  <label for="terms">No Proxy: This form can only be filled once per device.</label>
+                  <div class="error"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-group">
+                  <button class="submit">Submit</button>
+                </div>
+              </div>
+              
+            </form>
+          </div>
+    </div>
+</body>
+</html>
